@@ -10,7 +10,7 @@ const Detail = () => {
   const [character, setCharacter] = useState({});
 
   useEffect(() => {
-    fetch(`https://rickandmortyapi.com/api/character/${detailId}`)
+    fetch(`http://localhost:3001/rickandmorty/detail/${detailId}`)
       // Fecth me está trayendo info sobre detailId que sería un id de un personaje
       .then((response) => response.json())
       .then((char) => {
